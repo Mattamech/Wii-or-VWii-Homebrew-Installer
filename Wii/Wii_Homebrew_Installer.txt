@@ -3,6 +3,6 @@ cd C:\Wii_homebrew\sd
 del /f *.bat
 Xcopy /E /I C:\Wii_homebrew\sd (Place location of the ROOT of your sd card here)
 pause
-cd C:\Wii_homebrew
-del /f *bat
+echo You have completed installation. You may either reuse this file, or download Homebrew_Cleaner to erase C:\Wii_Homebrew.
 pause
+exit
