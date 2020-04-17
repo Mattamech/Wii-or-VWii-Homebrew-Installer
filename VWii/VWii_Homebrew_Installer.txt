@@ -4,6 +4,5 @@ del /f *.bat
 Xcopy /E /I C:\VWii_homebrew\sd (Place location of the ROOT of your sd card here)
 pause
 cd C:\VWii_homebrew
-start C:\VWii_homebrew
 del /f *bat
 pause
