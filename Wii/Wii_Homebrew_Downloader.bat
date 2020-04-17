@@ -12,7 +12,7 @@ pause
 unzip *zip
 pause
 cd C:\Wii_Homebrew
-curl https://raw.githubusercontent.com/Mattamech/Wii-or-VWii-Homebrew-Installer/master/Wii/Wii_Homebrew_Installer.txt?token=AKIPMQNQYIAISPOMACO2F6K6TGZ4Q --output Wii_Homebrew_Installer.txt
+curl https://raw.githubusercontent.com/Mattamech/Wii-or-VWii-Homebrew-Installer/master/Wii/Wii_Homebrew_Installer.txt?token=AKIPMQL2DK4KFFTAJEM36FC6TG2CW --output Wii_Homebrew_Installer.txt
 start C:\Wii_Homebrew
 start C:\Wii_Homebrew\Wii_Homebrew_Installer.txt
 exit
