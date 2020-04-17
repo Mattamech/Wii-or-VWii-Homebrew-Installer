@@ -1,5 +1,5 @@
 C:
-cd C:
+cd C:\
 mkdir Wii_Homebrew
 cd C:\Wii_Homebrew
 mkdir sd
