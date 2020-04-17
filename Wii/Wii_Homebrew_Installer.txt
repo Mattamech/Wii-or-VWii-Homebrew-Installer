@@ -8,7 +8,11 @@ pause
 (Please rename the folder Homebrew Browser Guide and Help to the name below)
 RD /S /Q C:\Wii_Homebrew\sd\Homebrew_Browser_Guide_and_Help
 pause
-Xcopy /E /I C:\Wii_Homebrew\sd\homebrew_browser C:\Wii_Homebrew\sd\apps
+cd C:\Wii_Homebrew\sd\apps\
+mkdir homebrew_browser
+cd C:\Wii_Homebrew\sd
+Xcopy /E /I C:\Wii_Homebrew\sd\homebrew_browser C:\Wii_Homebrew\sd\apps\homebrew_browser
+RD /S /Q C:\Wii_Homebrew\sd\homebrew_browser
 Xcopy /E /I C:\Wii_Homebrew\sd (Place location of the ROOT of your sd card here)
 pause
 echo You have completed installation. You may either reuse this file, or download Homebrew_Cleaner to erase C:\Wii_Homebrew.
