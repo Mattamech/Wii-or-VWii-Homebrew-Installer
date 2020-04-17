@@ -5,4 +5,6 @@ Xcopy /E /I C:\Wii_homebrew\sd (Place location of the ROOT of your sd card here)
 pause
 echo You have completed installation. You may either reuse this file, or download Homebrew_Cleaner to erase C:\Wii_Homebrew.
 pause
+echo Also, sence this is the BASE install you might need to make a apps folder on your sd card...
+pause
 exit
