@@ -11,3 +11,4 @@ curl http://stahlworks.com/dev/unzip.exe --output unzip.exe
 pause
 unzip *zip
 pause
+exit
