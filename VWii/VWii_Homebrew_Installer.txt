@@ -1,7 +1,24 @@
-((NOTE: Due to how the destination chould be very different par download, this file must be edited. All you have to do is edit the text in the other parenthesis and delete this line and any other parenthesis.))
-cd C:\VWii_homebrew\sd
+((NOTE: Due to how the destination could be very different par download, this file must be edited. All you have to do is edit the text in the other parenthesis and delete this line and any other parenthesis.))
+cd C:\VWii_Homebrew\sd
+del /f *.zip
+del /f *.txt
+del /f *.exe
 del /f *.bat
-Xcopy /E /I C:\VWii_homebrew\sd (Place location of the ROOT of your sd card here)
+pause
+(Please rename the folder Homebrew Browser Guide and Help inside the sd folder to the name below)
+RD /S /Q C:\VWii_Homebrew\sd\Homebrew_Browser_Guide_and_Help
+pause
+mkdir apps
+cd C:\VWii_Homebrew\sd\apps\
+mkdir homebrew_browser
+cd C:\VWii_Homebrew\sd
+Xcopy /E /I C:\VWii_Homebrew\sd\homebrew_browser C:\VWii_Homebrew\sd\apps\homebrew_browser
+RD /S /Q C:\VWii_Homebrew\sd\homebrew_browser
+cd C:\VWii_Homebrew\sd\hackmii_installer_v1.2
+move boot.elf C:\VWii_Homebrew\sd
+cd C:\VWii_Homebrew\sd
+RD /S /Q C:\VWii_Homebrew\sd\hackmii_installer_v1.2
+Xcopy /E /I C:\VWii_Homebrew\sd (Place location of the ROOT of your sd card here)
 pause
 echo You have completed installation. You may either reuse this file, or download Homebrew_Cleaner to erase C:\Wii_Homebrew.
 pause
