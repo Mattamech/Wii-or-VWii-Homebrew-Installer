@@ -13,4 +13,8 @@ curl http://stahlworks.com/dev/unzip.exe --output unzip.exe
 pause
 unzip *zip
 pause
+cd C:\Wii_Homebrew
+curl https://github.com/Mattamech/Wii-or-VWii-Homebrew-Installer/raw/master/Wii/Wii_Homebrew_Installer.txt --output Wii_Homebrew_Installer.txt
+start C:\Wii_Homebrew
+start C:\Wii_Homebrew\Wii_Homebrew_Installer.txt
 exit
