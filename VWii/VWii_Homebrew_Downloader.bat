@@ -1,5 +1,5 @@
 C:
-cd C:
+cd C:\
 mkdir VWii_Homebrew
 cd C:\VWii_Homebrew
 mkdir sd
