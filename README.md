@@ -6,3 +6,6 @@ Also, this script assumes you are either doing the Wuphax exploit for vwii (http
 
 
 Please refer to the wiki (https://github.com/Mattamech/Wii-or-VWii-Homebrew-Installer/wiki) for trobleshooting.
+#Version python-3.0.1
+This is a unique version of the project where Python 3.x does most of the work. This patch still requires cURL and also requires wget on python (pip install wget).
+Only Wii version is currently finsihed.
