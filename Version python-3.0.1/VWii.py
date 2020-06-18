@@ -8,11 +8,11 @@ os.chdir(Download_Location)
 print(os.getcwd())
 input("If the folder above is not correct you will have to restart. Press enter to continue.")
 
-wget.download('https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/wii_downloader.bat', 'wii_downloader.bat')
+wget.download('https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/vwii_downloader.bat', 'vwii_downloader.bat')
 
-input("Double Check that wii_downloader.bat is now in the folder you specifyed. Press enter to continue.")
+input("Double Check that vwii_downloader.bat is now in the folder you specifyed. Press enter to continue.")
 
-os.system('cmd /c wii_downloader.bat')
+os.system('cmd /c vwii_downloader.bat')
 os.system('cmd /c unzip *.zip')
 os.system('cmd /c del /f *.zip')
 os.system('cmd /c del /f *.txt')
