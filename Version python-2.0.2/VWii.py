@@ -10,6 +10,9 @@ input("If the folder above is not correct you will have to restart. Press enter 
 
 wget.download('https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/vwii_downloader.bat', 'vwii_downloader.bat')
 
+clear = lambda: os.system('cls')
+clear()
+
 input("Double Check that vwii_downloader.bat is now in the folder you specifyed. Press enter to continue.")
 
 os.system('cmd /c vwii_downloader.bat')
