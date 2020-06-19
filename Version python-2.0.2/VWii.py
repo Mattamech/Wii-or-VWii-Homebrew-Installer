@@ -33,7 +33,7 @@ shutil.copyfile('bootmini.elf', 'copy_to_sd\bootmini.elf')
 shutil.copytree('apps', 'copy_to_sd\apps')
 shutil.copytree('wiiu', 'copy_to_sd\wiiu')
 
-Save_Location = input("Enter Drive letter (ex G:) here:)
+Save_Location = input("Enter Drive letter (ex G:) here:")
 shutil.move('copy_to_sd\boot.elf', Save_Location)
 shutil.move('copy_to_sd\bootmini.elf', Save_Location)
 shutil.move('copy_to_sd\apps', Save_Location)
