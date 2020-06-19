@@ -23,6 +23,8 @@ os.system('cmd /c del /f *.exe')
 wget.download('https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/vwii_copier.bat', 'vwii_copier.bat')
 os.system('cmd /c vwii_copier.bat')
 os.system('cmd /c del /f *.bat')
+os.system('cmd /c del /f *.install')
+os.system('cmd /c del /f *.json')
 os.system('cmd /c RD /S /Q "Homebrew Browser Guide and Help"')
 
 
