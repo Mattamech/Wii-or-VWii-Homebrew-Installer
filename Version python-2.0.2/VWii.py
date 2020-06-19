@@ -28,8 +28,8 @@ os.system('cmd /c del /f *.json')
 os.system('cmd /c RD /S /Q "Homebrew Browser Guide and Help"')
 
 os.mkdir('copy_to_sd')
-shutil.copyfile('boot.elf', 'copy_to_sd\boot.elf')
-shutil.copyfile('bootmini.elf', 'copy_to_sd\bootmini.elf')
+shutil.move('boot.elf', 'copy_to_sd')
+shutil.move('bootmini.elf', 'copy_to_sd')
 shutil.copytree('apps', 'copy_to_sd\apps')
 shutil.copytree('wiiu', 'copy_to_sd\wiiu')
 
