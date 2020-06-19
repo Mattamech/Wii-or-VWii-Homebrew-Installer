@@ -9,6 +9,3 @@ Please refer to the wiki (https://github.com/Mattamech/Wii-or-VWii-Homebrew-Inst
 
 
 
-# Version python-2.0.1
-This is a unique version of the project where Python 3.x does most of the work. This patch still requires cURL and also requires wget on python (pip install wget).
-Only Wii version is currently finsihed.
