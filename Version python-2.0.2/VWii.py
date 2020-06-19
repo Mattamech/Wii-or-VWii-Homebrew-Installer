@@ -27,9 +27,17 @@ os.system('cmd /c del /f *.install')
 os.system('cmd /c del /f *.json')
 os.system('cmd /c RD /S /Q "Homebrew Browser Guide and Help"')
 
+os.mkdir('copy_to_sd')
+shutil.copyfile('boot.elf', 'copy_to_sd\boot.elf')
+shutil.copyfile('bootmini.elf', 'copy_to_sd\bootmini.elf')
+shutil.copytree('apps', 'copy_to_sd\apps')
+shutil.copytree('wiiu', 'copy_to_sd\wiiu')
 
-Save_Location = input("Enter a folder NOT created yet (EX: copy_to_sd) here:")
-shutil.copytree(Download_Location, Save_Location)
+Save_Location = input("Enter Drive letter (ex G:) here:)
+shutil.move('copy_to_sd\boot.elf', Save_Location)
+shutil.move('copy_to_sd\bootmini.elf', Save_Location)
+shutil.move('copy_to_sd\apps', Save_Location)
+shutil.move('copy_to_sd\wiiu', Save_Location)
 
 
 input("If you followed the directions correctly the files should be in the root of the sd card. Press enter to exit.")
