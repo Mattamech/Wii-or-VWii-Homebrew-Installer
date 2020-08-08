@@ -11,8 +11,6 @@ wii_final.write('Xcopy /E /I copy_to_sd ')
 wii_final.write(Save_Location)
 wii_final.close()
 os.system('cmd /c wii_final.bat')
-os.system('cmd /c RD /S /Q apps')
-os.system('cmd /c RD /S /Q extra')
 os.system('cmd /c del /f *.elf')
 os.system('cmd /c del /f *.bat')
 
