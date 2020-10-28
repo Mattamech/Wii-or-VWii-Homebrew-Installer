@@ -1,10 +1,11 @@
 import os
 import shutil
 
-Download_Location = input("Enter folder here:")
+Program_Location = os.getcwd()
+
+Download_Location = "C:\homebrew"
+os.mkdir(Download_Location)
 os.chdir(Download_Location)
-print(os.getcwd())
-input("If the folder above is not correct you will have to restart. Press enter to continue.")
 
 wii_downloader = open('wii_downloader.bat','w')
 wii_downloader.write('curl https://wii.guide/assets/files/homebrew_browser_v0.3.9e.zip --output homebrew_browser.zip\n')
@@ -12,8 +13,6 @@ wii_downloader.write('curl https://wii.guide/assets/files/Priiloader_v0_8_2.zip 
 wii_downloader.write('curl https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/hackmii_installer_v1.2.1.zip -o hackmii_installer_v1.2.zip\n')
 wii_downloader.write('curl http://stahlworks.com/dev/unzip.exe --output unzip.exe')
 wii_downloader.close()
-
-input("Double Check that wii_downloader.bat is now in the folder you specifyed. Press enter to continue.")
 
 os.system('cmd /c wii_downloader.bat')
 os.system('cmd /c unzip *.zip')
@@ -49,5 +48,23 @@ os.system('cmd /c RD /S /Q extra')
 os.system('cmd /c del /f *.elf')
 os.system('cmd /c del /f *.bat')
 
-input("If you followed the directions correctly the files should be in the root of the sd card. Press enter to exit.")
-exit()
+run_copier = input("Do you wish to [1]run the copier,\n [2]delete the copy-to-sd folder,\n [3]or just exit?\n Enter a number to shown to choose.\n")
+if run_copier == "1":
+    os.chdir(Program_Location)
+    os.system('cmd /c curl https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/wii_copier.py -o wii_copier.py')
+    os.system('cmd /c py wii_copier.py')
+    exit()
+elif run_copier == "2":
+    os.chdir(Program_Location)
+    delete = open('Delete.bat','w')
+    delete.write('RD /S /Q ')
+    delete.write(Download_Location)
+    delete.close()
+    os.system('cmd /c Delete.bat')
+    os.system('cmd /c del /f Delete.bat')
+    exit()
+elif run_copier == "3":
+    exit()
+else:
+    input("Whoops! That wasn't supposed to happen! Press enter to exit.")
+    exit()
