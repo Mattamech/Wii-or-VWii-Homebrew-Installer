@@ -62,7 +62,7 @@ os.system('cmd /c del /f *.bat')
 run_copier = input("Do you wish to\n[1]run the copier,\n [2]delete the copy-to-sd folder,\n [3]or just exit?\n Enter a number to shown to choose.\n")
 if run_copier == "1":
     os.chdir(Program_Location)
-    os.system('cmd /c curl https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/wii_copier.py -o wii_copier.py')
+    os.system('cmd /c curl https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/python/wii_copier.py -o wii_copier.py')
     os.system('cmd /c py wii_copier.py')
     exit()
 elif run_copier == "2":
