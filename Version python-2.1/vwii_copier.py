@@ -15,5 +15,22 @@ os.system('cmd /c vwii_final.bat')
 os.system('cmd /c del /f *.bat')
 
 
-input("If you followed the directions correctly the files should be in the root of the sd card. Press enter to exit.")
-exit()
+rerun = input("Do you wish to [1]rerun the script,\n[2]delete the copy-to-sd folder,\n[3]or just exit?\nEnter the number that matches your choice.\n")
+if rerun == "1":
+    os.chdir(Program_Location)
+    os.system('cmd /c py vwii_copier.py')
+    exit()
+elif rerun == "2":
+    os.chdir(Program_Location)
+    delete = open('Delete.bat','w')
+    delete.write('RD /S /Q ')
+    delete.write(Download_Location)
+    delete.close()
+    os.system('cmd /c Delete.bat')
+    os.system('cmd /c del /f Delete.bat')
+    exit()
+elif rerun == "3":
+    exit()
+else:
+    input("Whoops! That wasn't supposed to happen! Press enter to exit.")
+    exit()
