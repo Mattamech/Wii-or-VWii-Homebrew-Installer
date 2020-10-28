@@ -3,9 +3,10 @@ import shutil
 
 Program_Location = os.getcwd()
 
-Download_Location = "C:\homebrew"
-os.mkdir(Download_Location)
+Download_Location = input("Enter folder here:")
 os.chdir(Download_Location)
+print(os.getcwd())
+input("If the folder above is not correct you will have to restart. Press enter to continue.")
 
 wii_downloader = open('wii_downloader.bat','w')
 wii_downloader.write('curl https://wii.guide/assets/files/homebrew_browser_v0.3.9e.zip --output homebrew_browser.zip\n')
