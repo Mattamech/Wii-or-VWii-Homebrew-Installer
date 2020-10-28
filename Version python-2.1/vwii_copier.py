@@ -2,9 +2,10 @@ import os
 
 Program_Location = os.getcwd()
 
-Download_Location = "C:\homebrew"
-os.mkdir(Download_Location)
+Download_Location = input("Enter folder here:")
 os.chdir(Download_Location)
+print(os.getcwd())
+input("If the folder above is not correct you will have to restart. Press enter to continue.")
 
 Save_Location = input("Enter Drive letter (ex G:) here:")
 vwii_final = open('vwii_final.bat','w')
