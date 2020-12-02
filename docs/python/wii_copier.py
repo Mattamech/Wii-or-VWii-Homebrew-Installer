@@ -1,3 +1,7 @@
+# Made by Lord-Giganticus and Mattamech. Please do not repost this without crediting us! :)
+
+# Version 2.1.2
+
 import os
 
 Program_Location = os.getcwd()
