@@ -1,9 +1,8 @@
 # Wii-or-VWii-Homebrew-Installer
-CMD or Python 3.x script(s) to ready your sd card for homebrewing the wii or vwii.
-This requires the downloading of cURL https://curl.haxx.se/windows/ for proper downloading.
-The script(s) will run using drive letter C so make sure it exists on your computer. 
-Also, this script assumes you are either doing the Wuphax exploit for vwii (https://wiiu.hacks.guide/vwii-modding.html#section-ii---wuphax) or letterbomb (https://wii.guide/letterbomb) for wii.
-
-
-Please refer to the wiki (https://github.com/Mattamech/Wii-or-VWii-Homebrew-Installer/wiki) for trobleshooting.
-
+A Python 3.x script to ready your sc card for wii/vwii homebrew.
+* Usage:
+`py -3 vwii.py` or `py -3 wii.py`
+* Requirements:
+Curl must be installed to cmd. Most newer computers have this pre packaged.
+* NOTE:
+Please look at issue [#9](https://github.com/Mattamech/Wii-or-VWii-Homebrew-Installer/issues/9) before contributing.
