@@ -1,5 +1,5 @@
 # Wii-or-VWii-Homebrew-Installer
-A Python 3.x script to ready your sc card for wii/vwii homebrew.
+Python 3.x script to ready your sc card for wii/vwii homebrew.
 * Usage:
 `py -3 vwii.py` or `py -3 wii.py`
 * Requirements:
