@@ -17,8 +17,6 @@ def error(x,y):
 
 def wii():
     try:
-        Program_Location = os.getcwd()
-
         Download_Location = input("Enter folder here:")
         os.chdir(Download_Location)
         print(os.getcwd())
@@ -74,27 +72,11 @@ def wii():
         os.system('cmd /c RD /S /Q extra')
         os.system('cmd /c del /f *.elf')
         os.system('cmd /c del /f *.bat')
-
-        run_copier = input("Do you wish to\n[1]run the copier,\n [2]delete the copy-to-sd folder,\n [3]or just exit?\n Enter a number to shown to choose.\n")
-        if run_copier == "1":
-            os.chdir(Program_Location)
-            os.system('cmd /c curl https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/python/wii_copier.py -o wii_copier.py')
-            os.system('cmd /c py wii_copier.py')
-            exit()
-        elif run_copier == "2":
-            os.system('cmd /c RD /S /Q copy_to_sd')
-            exit()
-        elif run_copier == "3":
-            exit()
-        else:
-            error(78, 0)
     except:
         error(19, 90)
 
 def wii_copier():
     try:
-        Program_Location = os.getcwd()
-
         Download_Location = input("Enter folder here:")
         os.chdir(Download_Location)
         print(os.getcwd())
@@ -108,32 +90,11 @@ def wii_copier():
         os.system('cmd /c wii_final.bat')
         os.system('cmd /c del /f *.elf')
         os.system('cmd /c del /f *.bat')
-
-        rerun = input("Do you wish to [1]rerun the script,\n[2]delete the copy-to-sd folder,\n[3]or just exit?\nEnter the number that matches your choice.\n")
-        if rerun == "1":
-            os.chdir(Program_Location)
-            os.system('cmd /c py wii_copier.py')
-            exit()
-        elif rerun == "2":
-            os.chdir(Program_Location)
-            delete = open('Delete.bat','w')
-            delete.write('RD /S /Q ')
-            delete.write(Download_Location)
-            delete.close()
-            os.system('cmd /c Delete.bat')
-            os.system('cmd /c del /f Delete.bat')
-            exit()
-        elif rerun == "3":
-            exit()
-        else:
-            error(112, 0)
     except:
         error(95, 129)
 
 def vwii():
     try:
-        Program_Location = os.getcwd()
-
         Download_Location = input("Enter folder here:")
         os.chdir(Download_Location)
         print(os.getcwd())
@@ -208,27 +169,11 @@ def vwii():
         os.system('cmd /c RD /S /Q wiiu')
         os.system('cmd /c del /f *.elf')
         os.system('cmd /c del /f *.bat')
-
-        run_copier = input("Do you wish to\n[1]run the copier,\n [2]delete the copy-to-sd folder,\n [3]or just exit?\n Enter a number to shown to choose.\n")
-        if run_copier == "1":
-            os.chdir(Program_Location)
-            os.system('cmd /c curl https://mattamech.github.io/Wii-or-VWii-Homebrew-Installer/docs/python/vwii_copier.py -o wii_copier.py')
-            os.system('cmd /c py wii_copier.py')
-            exit()
-        elif run_copier == "2":
-            os.system('cmd /c RD /S /Q copy_to_sd')
-            exit()
-        elif run_copier == "3":
-            exit()
-        else:
-            error(212, 0)
     except:
         error(134, 224)
 
 def vwii_copier():
     try:
-        Program_Location = os.getcwd()
-
         Download_Location = input("Enter folder here:")
         os.chdir(Download_Location)
         print(os.getcwd())
@@ -241,25 +186,8 @@ def vwii_copier():
         vwii_final.close()
         os.system('cmd /c vwii_final.bat')
         os.system('cmd /c del /f *.bat')
-
-
-        rerun = input("Do you wish to [1]rerun the script,\n[2]delete the copy-to-sd folder,\n[3]or just exit?\nEnter the number that matches your choice.\n")
-        if rerun == "1":
-            os.chdir(Program_Location)
-            os.system('cmd /c py vwii_copier.py')
-            exit()
-        elif rerun == "2":
-            os.chdir(Program_Location)
-            delete = open('Delete.bat','w')
-            delete.write('RD /S /Q ')
-            delete.write(Download_Location)
-            delete.close()
-            os.system('cmd /c Delete.bat')
-            os.system('cmd /c del /f Delete.bat')
-            exit()
-        elif rerun == "3":
-            exit()
-        else:
-            error(246, 0)
     except:
         error(229, 263)
+
+def complete():
+    input("Complete. Press enter to exit.")
