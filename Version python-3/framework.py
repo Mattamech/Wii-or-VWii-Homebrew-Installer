@@ -191,3 +191,5 @@ def vwii_copier():
 
 def complete():
     input("Complete. Press enter to exit.")
+
+print("framework all setup and ready to go.")
