@@ -2,7 +2,7 @@
 
 import framework
 
-option = int(input("Enter the number corresponding to which one of the py files you wish to run:\n[1]vwii.py\n[2]vwii_copier.py\n[3]wii.py\n[4]wii_copier.py"))
+option = int(input("Enter the number corresponding to which one of the py files you wish to run:\n[1]vwii.py\n[2]vwii_copier.py\n[3]wii.py\n[4]wii_copier.py\n"))
 if option == 1:
     framework.vwii()
     framework.complete()
