@@ -1,6 +1,6 @@
 # Made by Lord-Giganticus and Mattamech. Please do not repost this without crediting us! :)
 
-Version = 3
+Version = 3.1
 
 import os
 import shutil
