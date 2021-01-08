@@ -1,2 +1,4 @@
 /Version python-3/*.zip
 /Version python-3/__pycache__
+/Version python-3.1/*.zip
+/Version python-3.1/framework/__pycache__
