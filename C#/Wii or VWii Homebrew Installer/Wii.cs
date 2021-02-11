@@ -1,4 +1,7 @@
 ﻿using System.Net;
+using System.Diagnostics;
+using System.IO;
+using System;
 
 
 namespace Wii_or_VWii_Homebrew_Installer
@@ -16,6 +19,17 @@ namespace Wii_or_VWii_Homebrew_Installer
                 client.DownloadFile("http://stahlworks.com/dev/unzip.exe", "unzip.exe");
             }
             return;
+        }
+        public static void Extract()
+        {
+            Environment.CurrentDirectory = Directory.GetCurrentDirectory();
+            Process.Start("CMD.exe", "/c unzip *.zip & del /f *.zip & del /f *.txt & del /f unzip.exe & exit").WaitForExit();
+            return;
+        }
+        public static void Move()
+        {
+            Environment.CurrentDirectory = Directory.GetCurrentDirectory();
+            Process.Start("CMD.exe", "/c cd apps");
         }
     }
 }

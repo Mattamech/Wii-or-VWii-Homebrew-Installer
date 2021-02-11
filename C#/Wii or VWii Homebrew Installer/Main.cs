@@ -11,6 +11,8 @@ namespace Wii_or_VWii_Homebrew_Installer
             if (Choice == "1")
             {
                 Wii.Download();
+                Wii.Extract();
+                Wii.Move();
             }
         }
     }
