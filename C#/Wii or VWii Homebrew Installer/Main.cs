@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Wii_or_VWii_Homebrew_Installer
 {
-    class Main
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine("Chose which Wii Variant you want to ready your sd card for:\n[1]Wii\n[2]VWii\n");
+            string Choice = Console.ReadLine();
+            if (Choice == "1")
+            {
+                Wii.Download();
+            }
         }
     }
 }
