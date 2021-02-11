@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wii_or_VWii_Homebrew_Installer
 {
-    class Program
+    class Main
     {
         static void Main(string[] args)
         {

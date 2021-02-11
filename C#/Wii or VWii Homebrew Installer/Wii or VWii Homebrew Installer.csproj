@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C8711037-9F02-4552-93E3-0AD044D12E71}</ProjectGuid>
+    <ProjectGuid>{E471D8B8-2D9D-457A-A77C-9EAD09FB2DFB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Wii_or_VWii_Homebrew_Installer</RootNamespace>
     <AssemblyName>Wii or VWii Homebrew Installer</AssemblyName>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
